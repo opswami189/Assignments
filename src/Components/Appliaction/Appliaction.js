@@ -9,7 +9,7 @@ function Application() {
   const user = useContext(UserContext);
 
   return user ? (
-    <Home />
+    <ProfilePage />
   ) : (
     <Router>
       <SignUp path="signUp" />

@@ -17,7 +17,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
-const cardsRef = firestore.collection("/cards");
+export const cardsRef = firestore.collection("/cards");
 export var currentUser = null;
 export const getCards = async () => {
   var user = auth.currentUser;
